@@ -8,7 +8,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Zhuxy's blog
+title : Zhuxy's Space
 tagline: Just for fun
 author :
   name : zhuxy
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://xianyo.github.io
+production_url : http://zhuxy.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
