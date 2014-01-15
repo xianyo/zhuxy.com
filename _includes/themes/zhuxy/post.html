@@ -1,11 +1,13 @@
 <div id="page">
-	
-  <h1 class="emphnext">{{ page.title }}</h1>
+  <div class="page-header">
+     <h1>{{ page.title }}</h1>
+  </div>	
+ <!-- <h1 class="emphnext">{{ page.title }}</h1>
   <ul class="tag_box inline">
   {% assign tags_list = page.tags %}
   {% include JB/tags_list %}
   </ul>
-
+ -->
   {{ content }}
 
   <address class="signature">
@@ -13,13 +15,37 @@
     <span class="date">{{ page.date | date_to_long_string }}</span>
     <span class="location">{{ page.location }}</span>
   </address>
-  
+  <div class="page-end">
+  <div style="float: left;">
+  {% unless page.categories == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+    </ul>
+  {% endunless %}  
+  </div>
+
+  {% unless page.tags == empty %}
+    <ul class="tag_box inline_right">
+      <li><i class="icon-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+    </ul>
+  {% endunless %}  
+
+  </div>
+
   <div class="prev-next">
   {% if page.next %}
     <a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}">Next Post &rarr;</a>
+  {% else %}
+    <a href="{{ HOME_PATH }}" class="next" >No Next Post</a>
   {% endif %}
   {% if page.previous %}
     <a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}">&larr; Earlier Post</a>
+  {% else %}
+    <a href="{{ HOME_PATH }}" class="prev" >No Earlier Post</a>
   {% endif %}
   </div>
   

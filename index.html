@@ -1,0 +1,68 @@
+---
+layout: page
+title: Home
+---
+<!-- 使用jekyll语法，作用是获取文章数，自动地展示文章-->
+{% for post in paginator.posts %}
+<div class="post">
+	<div class="post-left">
+
+		<!-- 左侧的显示时间 -->
+		<div class="post-date">
+			<!--获取文章的“日”，格式为 date: "%d" -->
+			{{ post.date | date: "%d" }}
+			<!--获取文章的“月 年”，格式为 date: "%b %Y" 其中%b表示缩写月份，大写月份为%B -->
+			<span>{{ post.date | date: "%b %Y" }}</span>
+		</div>
+	</div>
+	<div class="post-right">
+		<h2 id="post-title">
+			<!-- 文章的大标题显示 -->
+			<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+		</h2>
+		<!-- 文章作者 
+		<h6>By {{ page.title }}</h6>
+		-->
+		<div class="the-content">
+			<!-- 文章缩图显示 -->
+			<div class="post-overview-left">
+				
+			</div>
+			<!-- 文章摘要显示 -->
+			<div class="post-overview-right">
+				<p>
+					{{ post.content  | | split:'<!--break-->' | first }}
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	<a href="{{ BASE_PATH }}{{ post.url }}" style="float:right;" >Read More &raquo;</a>
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div style="text-align:center;">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <div style="float: left;">
+    <a style="" href="/">Home</a>
+    <a style="" href="/"> &laquo; Prev</a>
+    </div>
+    {% else %}
+    <div style="float: left;">
+    <a style="" href="/">Home</a>
+    <a style="" href="/page{{paginator.previous_page}}/"> &laquo; Prev</a>
+    </div>
+    {% endif %}
+  {% endif %}
+  <span><a style="margin:0 auto；">Page: {{paginator.page}} of {{paginator.total_pages}}</a></span>
+  {% if paginator.next_page %}
+    <div style="float: right;">
+    <a style="" href="/page{{paginator.next_page}}/">Next &raquo;</a>
+    <a style="" href="/page{{paginator.total_pages}}/">Last</a>
+    </div>
+  {% else if paginator.page == paginator.total_pages %}
+   
+  {% endif %}
+</div>
