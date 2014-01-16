@@ -2,9 +2,7 @@
 layout: post
 category : learn
 tags : [jekyll]
-description: |
-  The Jekyll introduction outlines specifically what Jekyll is and why you would want to use it,
-  as well as exactly how Jekyll does what it does.
+
 ---
 
 ### Overview 
@@ -23,7 +21,7 @@ This website is created with Jekyll. [Other Jekyll websites](https://github.com/
 #### What does Jekyll Do?
 
 Jekyll is a ruby gem you install on your local system.
-Once there you can call `jekyll --server` on a directory and provided that directory
+Once there you can call `jekyll serve` on a directory and provided that directory
 is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, 
 compute categories, tags, permalinks, and construct your pages from layout templates and partials.
 
@@ -129,9 +127,6 @@ Jekyll expects your website directory to be laid out like so:
 Jekyll supports various configuration options that are fully outlined here:
 <https://github.com/mojombo/jekyll/wiki/Configuration>
 
-
-
-
 ### Content in Jekyll
 
 Content in Jekyll is either a post or a page.
@@ -172,12 +167,9 @@ If you define more than one category you are defining a category hierarchy "set"
 Example:
 
 ```yaml
----
 title :  Hello World
 categories : [lessons, beginner]
----
 ```
-
 
 This defines the category hierarchy "lessons/beginner". Note this is _one category_ node in Jekyll.
 You won't find "lessons" and "beginner" as two separate categories unless you define them elsewhere as singular categories.
@@ -310,7 +302,6 @@ Static assets should be used for images, css, and javascript files.
 
 
 
-
 ### How Jekyll Parses Files
 
 Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.
@@ -341,13 +332,12 @@ This is the only way Jekyll knows you want the file processed.
 YAML Front Matter must be prepended to the top of template/post/page files:
 
 ```yaml
----
 layout: post
 category : pages
 tags : [how-to, jekyll]
----
 
 ... contents ...
+
 ```
 
 Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
@@ -361,9 +351,6 @@ Configuration parameters for YAML Front-Matter is outlined here:
 The `layout` parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
 If a template file specifies a layout parameter, it is effectively being used as a `sub-template.`
 That is to say loading a post file into a template file that refers to another template file will work in the way you'd expect; as a nested sub-template.
-
-
-
 
 
 ### How Jekyll Generates the Final Static Files.

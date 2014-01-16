@@ -2,9 +2,7 @@
 layout: post
 category : learn
 tags : [jekyll]
-description : |
-  Quickly get your blog installed and published via GitHub Pages.
-  Then run your blog locally and create your first post and page.
+
 ---
 
 
@@ -60,14 +58,12 @@ Create pages easily via rake task:
 ```bash
 $ rake page name="about.md"
 ```
-    
 
 Create a nested page:
 
 ```bash
 $ rake page name="pages/about.md"
 ```    
-    
 
 Create a page with a "pretty" path:
 
@@ -75,10 +71,7 @@ Create a page with a "pretty" path:
 $ rake page name="pages/about"
 # this will create the file: ./pages/about/index.html
 ```  
-    
-    
-    
-  
+
 The rake task automatically creates a page file with properly formatted filename and YAML Front Matter 
 as well as includes the Jekyll Bootstrap "setup" file.
 
@@ -86,7 +79,6 @@ as well as includes the Jekyll Bootstrap "setup" file.
 
 Jekyll-bootstrap also provides many preconfigured page examples for reference. 
 You can study the source and customize it for your own needs.
-
 
 ### 5. Publish
 
@@ -126,8 +118,8 @@ Consult these pages for how and where to use the data and code provided.
 
 #### Jekyll Introduction
 
-<span class="label notice">highly recommend</span>   
-I highly recommend reading the [{{site.categories.lessons.first.title}}]({{site.categories.lessons.first.url}}) 
+<span class="label notice">highly recommend</span>    
+I highly recommend reading the [Jekyll Introduction](/learn/2014/01/10/jekyll-introduction) 
 if you plan to customize your blog. The introduction is meant for core understanding of how and why Jekyll works the way it does.
 This will provide you with the proper context, knowledge-base, and fundamentals necessary to understand
 and be efficient in working with Jekyll and Jekyll-Bootstrap.
