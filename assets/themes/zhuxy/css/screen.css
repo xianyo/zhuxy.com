@@ -657,13 +657,14 @@ div.post-left div.post-date span {
 	color: #21759b;
 	border-bottom: 1px solid #21759b;
 }
+/*
 .post-right h6 {
 	font-family: 'CabinRegular',Arial;
 	color: silver;
 	font-size: 1em;
 	font-weight: normal;
 }
-
+*/
 /* 文章摘要的样式 */
 .post-overview-right {
 	margin-top: -10px;
