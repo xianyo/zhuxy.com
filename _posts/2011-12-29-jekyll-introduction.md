@@ -81,7 +81,7 @@ Jekyll-bootstrap conveniently provides the base directory format.
 
 Jekyll expects your website directory to be laid out like so:
 
-{% highlight text %}
+'''text
 .
 |-- _config.yml
 |-- _includes
@@ -97,7 +97,7 @@ Jekyll expects your website directory to be laid out like so:
     |-- css
         |-- style.css
     |-- javascripts
-{% endhighlight %}
+'''
 
 - **\_config.yml**  
   Stores configuration data.
@@ -171,12 +171,12 @@ Note categories in Jekyll work in a specific way.
 If you define more than one category you are defining a category hierarchy "set".
 Example:
 
-{% highlight yaml %}
+'''yaml
 ---
 title :  Hello World
 categories : [lessons, beginner]
 ---
-{% endhighlight %}
+'''
 
 
 This defines the category hierarchy "lessons/beginner". Note this is _one category_ node in Jekyll.
@@ -198,12 +198,12 @@ Pages do not compute categories nor tags so defining them will have no effect.
 If pages are defined in sub-directories, the path to the page will be reflected in the url.
 Example:
 
-{% highlight text %}
+'''text
 .
 |-- people
     |-- bob
         |-- essay.html
-{% endhighlight %}
+'''
 
 This page will be available at `http://yourdomain.com/people/bob/essay.html`
 
@@ -239,14 +239,14 @@ There is a special variable in all templates named : `content`.
 The `content` variable holds the page/post content including any sub-template content previously defined.
 Render the content variable wherever you want your main content to be injected into your template:
 
-{% capture text %}...
+'''text
 <body>
   <div id="sidebar"> ... </div>
   <div id="main">
     |.{content}.|
   </div>
 </body>
-...{% endcapture %}
+'''
 
 #### Sub-Templates
 
@@ -340,7 +340,7 @@ This is the only way Jekyll knows you want the file processed.
 
 YAML Front Matter must be prepended to the top of template/post/page files:
 
-{% highlight yaml %}
+'''yaml
 ---
 layout: post
 category : pages
@@ -348,7 +348,7 @@ tags : [how-to, jekyll]
 ---
 
 ... contents ...
-{% endhighlight %}
+'''
 
 Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
 The data inside the block must be valid YAML.

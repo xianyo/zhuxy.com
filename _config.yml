@@ -2,8 +2,12 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
+markdown: redcarpet
+redcarpet:
+    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+    
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
+pygments: false
 paginate: 5
 
 # Themes are encouraged to use these universal variables 
