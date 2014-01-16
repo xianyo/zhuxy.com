@@ -87,11 +87,6 @@ as well as includes the Jekyll Bootstrap "setup" file.
 Jekyll-bootstrap also provides many preconfigured page examples for reference. 
 You can study the source and customize it for your own needs.
 
-<ul>
-{% assign pages_list = site.pages %}
-{% assign group = "example-page" %}
-{% include JB/pages_list %}
-</ul>
 
 ### 5. Publish
 
