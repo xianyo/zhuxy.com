@@ -12,7 +12,7 @@ group: navigation
 ---
 ##关于我
 
-名Zhuxy，男，年方26，广西人也，较慵懒，质平庸，专业码农挨踢男。
+名Zhuxy，男，广西人也，较慵懒，质平庸，专业码农挨踢男。
 
 喜Reading,Coding,Sleeping。
 
