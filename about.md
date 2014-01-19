@@ -12,15 +12,17 @@ group: navigation
 ---
 ##关于我
 
-名Zhuxy，男，广西人也，较慵懒，质平庸，专业码农挨踢男。
+吾名Zhuxy，男，广西人也，较慵懒，质平庸，专业码农挨踢男。
 
 喜Reading,Coding,Sleeping。
 
 喜折腾。Win/Linux/Mac、MCU/SoC、C/C++/JAVA/C#/WEB、Android/IOS，均在折腾之列。
 
-工具狂。完美主义者。强迫症重度患者。
+工具癖。完美主义者。强迫症重度患者。
 
 目前就业于Linux/Android底层开发。
+
+目前游荡在深圳。
 
 ----
 ##关于本站
