@@ -144,6 +144,8 @@ sup { line-height: 1ex; }
 	font-size: 0.875em;
 	line-height: 1.714em;
 }
+
+/*
 blockquote {
 	padding: 0 2.8em;
 	margin: 1.714em 0;
@@ -151,6 +153,7 @@ blockquote {
 	font-size: 0.875em;
 	line-height: 1.714em;
 }
+*/
 
 .note {
 	padding-top: 0.5em; 
