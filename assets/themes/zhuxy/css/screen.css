@@ -21,7 +21,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 /* @end */
 
 body {
-    font-family:"Helvetica Neue", Ubuntu, Tahoma, Arial, Helvetica, sans-serif;
+   font-family:"Helvetica Neue", Ubuntu, Tahoma, Arial, Helvetica, sans-serif;
 	background-color: whitesmoke;
 	background-position: center -18em;
 	background-repeat: repeat-x; 
@@ -68,7 +68,7 @@ sup { line-height: 1ex; }
 	max-width: 50em;
 	margin: 1.5em auto 3em auto;
 	line-height:1.5em;
-    font-family:"Helvetica Neue", Ubuntu, Tahoma, Arial, Helvetica, sans-serif;
+   font-family:"微软雅黑", "Helvetica Neue", Ubuntu, Tahoma, Arial, Helvetica, sans-serif;
 }
 
 #page, #disqus_thread {
