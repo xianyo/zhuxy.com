@@ -192,7 +192,7 @@ ul li {
 }
 ol li {
 	list-style-type: decimal;
-	list-style-position: inside;
+	list-style-position: outside;
 }
 dt { font-weight: bold;}
 dd { margin: 0 0 1.5em 0; text-align: justify; }
