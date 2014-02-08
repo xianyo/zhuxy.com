@@ -144,6 +144,8 @@ sup { line-height: 1ex; }
 	font-size: 0.875em;
 	line-height: 1.714em;
 }
+
+/*
 blockquote {
 	padding: 0 2.8em;
 	margin: 1.714em 0;
@@ -151,6 +153,7 @@ blockquote {
 	font-size: 0.875em;
 	line-height: 1.714em;
 }
+*/
 
 .note {
 	padding-top: 0.5em; 
@@ -192,7 +195,7 @@ ul li {
 }
 ol li {
 	list-style-type: decimal;
-	list-style-position: inside;
+	list-style-position: outside;
 }
 dt { font-weight: bold;}
 dd { margin: 0 0 1.5em 0; text-align: justify; }
