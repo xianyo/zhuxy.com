@@ -3,6 +3,7 @@ layout: post
 title: Markdown 快速入门
 category : learn
 tags : [Markdown]
+
 ---
 << [访问 Wow!Ubuntu](http://wowubuntu.com)
 
