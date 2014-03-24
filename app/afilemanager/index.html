@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Product">
+  
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AFile Manager</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/afilemanager.css" rel="stylesheet">
+    
+    <script src="js/avalon.js"></script>
+    <script>
+        avalon.define("change_lang", function(vm) {
+            vm.lang = "en"
+            var Browser_Agent=navigator.userAgent;
+            if(Browser_Agent.indexOf("MSIE")!=-1){
+                var a=navigator.browserLanguage;
+                if(a="zh-cn"){
+                    vm.lang = "zh"
+                }
+            }
+            else{//firefox opera safari
+                var b=navigator.language;
+                if(b="zh-cn"){
+                    vm.lang = "zh"
+                }
+            }
+        })
+    </script>
+    
+  </head>
+  
+  <body>
+        <div ms-controller="change_lang">
+            <div ms-include-src="index_{{lang}}.html"></div>
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.js">
+    </script>
+    <script type="text/javascript">
+       if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+         var gplays = document.getElementsByClassName("gplay");
+         for (var i = 0; i < gplays.length; i++) {
+           gplays[i].href = "market://details?id=com.zhuxy.afilemanager";
+         }
+       }
+    </script>    
+  </body>
+
+</html>
