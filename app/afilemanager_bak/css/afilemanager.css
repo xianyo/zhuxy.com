@@ -85,6 +85,8 @@ h3 {
 
 .logo-desktop {
   padding-top: 115px;
+  padding-bottom: 110px;
+  text-align: center;
 }
 
 .banner-desktop {
@@ -97,15 +99,16 @@ h3 {
   margin-bottom: 60px;
 }
 
-/* @media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
   .logo-desktop {
-    padding-top: 120px;
+    padding-top: 75px;
+    padding-bottom: 80px;
   }
 
   .logo-desktop > .pattrn {
     margin-bottom: 40px;
   }
-} */
+}
 
 .content-row {
   margin: 40px 0px 40px 0px;
