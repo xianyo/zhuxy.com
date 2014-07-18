@@ -6,6 +6,9 @@ tags: [git]
 
 ---
 
+Gitolite 是一款 Perl 语言开发的 Git 服务管理工具，通过公钥对用户进行认证，并能够通过配置文件对写操作进行基于分支和路径的的精细授权。Gitolite 采用的是 SSH 协议并且使用 SSH 公钥认证，因此需要您对 SSH 了解，无论是管理员还是普通用户。因此在开始之前，请确认已经了解SSH相关知识。
+
+<!--break-->
 
 ### 创建git用户
 Ubuntu命令：  
@@ -16,8 +19,6 @@ CentOS命令：
 ```shell
 # useradd --system --shell /bin/bash --create-home --home-dir /home/git git  
 ```
-
-<!--break-->
 
 ### 生成SSH key  
 
