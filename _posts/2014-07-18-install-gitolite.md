@@ -160,24 +160,25 @@ testing仓储的读/写/强制更新只有git-admin用户拥有，其他所有�
 ```
 
 逐行解释：
-1: @admin用户组有git keven admin1 admin2四个用户
-2：@devteam用户组有dev1 dev2 dev3 fish四个用户
-4：对于gitolite-admin仓储
-5：git keven两个用户拥有读/写/强制更新的权限
-7：对于Projects下所有的git仓储（/.+代表递归所有）
-8：@admin用户组拥有创建仓储的权限
-9：所有人均可读/写
-11：对于testing.git
-12：@admin用户组拥有读/写/强制更新的权限
-13：fish是新手，对其屏蔽写的权限。因为其属@dev组，则还只剩下R 读的权限
-14：@dev用户组对master开头的分支拥有读/写权限
-15：dev1这个用户对dev开头的分支拥有读/写/强制更新的权限
-16：dev2这个用户对于wip分支（严格匹配）具有读/写权限
+1: @admin用户组有git keven admin1 admin2四个用户 
+2：@devteam用户组有dev1 dev2 dev3 fish四个用户  
+4：对于gitolite-admin仓储  
+5：git keven两个用户拥有读/写/强制更新的权限  
+7：对于Projects下所有的git仓储（/.+代表递归所有） 
+8：@admin用户组拥有创建仓储的权限  
+9：所有人均可读/写  
+11：对于testing.git  
+12：@admin用户组拥有读/写/强制更新的权限  
+13：fish是新手，对其屏蔽写的权限。因为其属@dev组，则还只剩下R 读的权限  
+14：@dev用户组对master开头的分支拥有读/写权限  
+15：dev1这个用户对dev开头的分支拥有读/写/强制更新的权限  
+16：dev2这个用户对于wip分支（严格匹配）具有读/写权限  
 
 ####远程创建/删除仓储
 
 ##### 创建
-关于创建仓储，方法有三种：
+关于创建仓储，方法有三种： 
+
 * 登录远程服务器创建
 	ssh登录服务器，切换至git用户，进入相关目录，创建某仓储
 	
@@ -215,8 +216,9 @@ testing仓储的读/写/强制更新只有git-admin用户拥有，其他所有�
 	gitolite会直接创建新的仓储。
 
 * 复制增加
-从别的地方把git版本库复制过来，再配置gitolite.conf。我一般都是在gitolite.conf配置通配符版本库，然后把git版本库复制过来。比如配置了repo Projects/.+$，然后再把别的地方的git版本库复制到Projects文件夹里。
-注意一些复制的文件的拥有者和群组。
+	从别的地方把git版本库复制过来，再配置gitolite.conf。我一般都是在gitolite.conf配置通配符版本库，然后把git版本库复制过来。比如配置了repo Projects/.+$，然后再把别的地方的git版本库复制到Projects文件夹里。
+
+	注意一些复制的文件的拥有者和群组。
 
 	```bash
 	$ chown -R git:git /home/git/repositories/Projects/android
