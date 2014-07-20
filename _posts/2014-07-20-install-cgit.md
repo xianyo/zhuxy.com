@@ -245,8 +245,9 @@ sudo service apache2 reload
 	```
 	
 	~/.gitolite.rc
+
 	```
 	$UMASK=0027
 	GIT_CONFIG_KEYS  =>  '.*',
-```
+	```
  
