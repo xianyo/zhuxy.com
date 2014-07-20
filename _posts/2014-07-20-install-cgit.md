@@ -77,6 +77,7 @@ sudo service apache2 reload
 * cgit配置文件
 
 	/etc/cgitrc
+
 	```
 	# Enable caching of up to 1000 output entriess
 	cache-size=1000
@@ -209,6 +210,7 @@ sudo service apache2 reload
 	scan-path=/home/git/mirror/
 	
 	```
+
 *  高亮 
 
 	```

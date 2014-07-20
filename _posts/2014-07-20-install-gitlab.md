@@ -98,7 +98,7 @@ Install the Bundler Gem:
 
     sudo gem install bundler --no-ri --no-rdoc
 
-** Or Taobao**
+** Or Taobao **
 
 	cd /tmp/
 	wget http://ruby.taobao.org/mirrors/ruby/ruby-2.1.2.tar.gz 
