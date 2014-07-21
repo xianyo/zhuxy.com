@@ -9,7 +9,7 @@ tags: [git]
 
 ## Overview
 
-The GitLab installation consists of setting up the following components:
+The GitLab installation consists of setting up the following components:                           
 
 1. Packages / Dependencies
 1. Ruby
