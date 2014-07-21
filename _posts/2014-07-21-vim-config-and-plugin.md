@@ -10,17 +10,19 @@ tags: [vim]
 
 基于[wklken-vim](https://github.com/wklken/k-vim)
 
-## 安装步骤
+
+<!--break-->
+
+
+### 安装步骤
 
 clone到本地,配置到linux个人目录
 
         git clone https://github.com/xianyo/vim.git ~/.vim
         cd ~/.vim
         ./install.sh setup
-
-<!--break-->
-        
-## 快捷键
+   
+### 快捷键
 
 #### 修改的快捷键和插件快捷键
 
@@ -76,7 +78,7 @@ clone到本地,配置到linux个人目录
     , + q     :q，退出vim
 
 
-## 插件
+### 插件
 
 
 1. ####插件管理 [gmarik/vundle](https://github.com/gmarik/vundle)
@@ -384,7 +386,7 @@ clone到本地,配置到linux个人目录
 31. ####vimim [vimim/vimim](https://github.com/vimim/vimim)
 
 
-## VIM TIPS
+### VIM TIPS
 
 ![vim-cheat-sheet-full.png](https://raw.githubusercontent.com/xianyo/k-vim/master/tips/pic/vim-cheat-sheet-full.png?raw=true)
 ![vim_keyboard.png](https://raw.githubusercontent.com/xianyo/k-vim/master/tips/pic/vim_keyboard.png?raw=true)
