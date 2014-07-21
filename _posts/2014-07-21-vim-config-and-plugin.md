@@ -6,22 +6,22 @@ tags: [vim]
 
 ---
 
-我的VIM配置和插件，地址 [xianyo/vim](https://github.com/xianyo/vim)
-
-基于[wklken-vim](https://github.com/wklken/k-vim)
-
-
-<!--break-->
+我的VIM配置和插件，地址 [xianyo/vim](https://github.com/xianyo/vim). 基于[wklken-vim](https://github.com/wklken/k-vim)
 
 
 ### 安装步骤
 
 clone到本地,配置到linux个人目录
 
-        git clone https://github.com/xianyo/vim.git ~/.vim
-        cd ~/.vim
+        git clone https://github.com/xianyo/vim.git ~/.vim                                                                    
+        cd ~/.vim               
         ./install.sh setup
-   
+ 
+
+<!--break-->
+
+
+ 
 ### 快捷键
 
 #### 修改的快捷键和插件快捷键
