@@ -1,6 +1,6 @@
 ---
 layout: post
-title: repo usage and hack
+title: Repo usage and hack
 category: learn
 tags: [git]
 

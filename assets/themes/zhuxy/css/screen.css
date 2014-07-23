@@ -579,17 +579,17 @@ img.maruku-png { }
 }
 
 .page-header{padding-bottom:9px;margin:20px 0 30px;border-bottom:1px solid #eeeeee;}
-.page-header h1 {display:block;font-family: 'CabinRegular',Arial;font-size: 2em;}
+/*.page-header h1 {display:block;font-family: 'CabinRegular',Arial;font-weight: bold;} */
 .page-end{border-top:1px solid #eeeeee;}
 
 /* 全局样式 */
 .post {
-	display: inline-block;
+	display: block;
 
 	/* 每篇文章的下面的分界线 */
 	border-bottom: 1px solid silver; 
 	/* 分界线上下预留一些空间 */
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	margin-bottom: 2em;
 }
 

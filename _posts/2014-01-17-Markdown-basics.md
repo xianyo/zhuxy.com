@@ -18,11 +18,10 @@ tags : [Markdown]
 [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
 [GitCafe]: http://gitcafe.com/riku/Markdown-Syntax-CN/
 <!--break-->
-Markdown: Basics （快速入门） / ([点击查看完整语法说明](./index.html))
-================
 
-Getting the Gist of Markdown's Formatting Syntax
-------------------------------------------------
+### Markdown: Basics （快速入门） 
+
+
 
 此页提供了 Markdown 的简单概念， [语法说明][s] 页提供了完整详细的文档，说明了每项功能。但是 Markdown 其实很简单就可以上手，此页文档提供了一些范例，并且每个范例都会提供输出的 HTML 结果。
 
