@@ -13,10 +13,11 @@ tags: [vim]
 
 clone到本地,配置到linux个人目录
 
-	git clone https://github.com/xianyo/vim.git ~/.vim
-	cd ~/.vim               
-	./install.sh setup
- 
+```bash
+git clone https://github.com/xianyo/vim.git ~/.vim
+cd ~/.vim               
+./install.sh setup
+``` 
 
 <!--break-->
 
