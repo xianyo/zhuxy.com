@@ -7,9 +7,6 @@ tags: [linux kernel]
 ---
 
 
-Device Tree常用方法解析
-===
-
 Device Tree在Linux内核驱动中的使用源于2011年3月17日Linus Torvalds在ARM Linux邮件列表中的一封邮件，他宣称“this whole ARM thing is a f\*cking pain in the ass”，并提倡学习PowerPC等其他架构已经成熟使用的Device Tree技术。自此，Device Tree正式进入ARM社区的视野中。
 
 **本文章资源多取自[Device Tree Usage](http://devicetree.org/Device_Tree_Usage)**
