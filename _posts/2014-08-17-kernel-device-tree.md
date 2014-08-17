@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "Kernel Device Tree"
-description: ""
-category: "linux kernel"
+title: Kernel Device Tree
+category: learn
 tags: [linux kernel]
 
 ---

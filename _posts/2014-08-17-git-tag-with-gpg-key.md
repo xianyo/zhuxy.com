@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "带GPG签名的Git tag"
-description: ""
-category: "git"
+title: 带GPG签名的Git tag
+category: learn
 tags: [git]
 
 ---
