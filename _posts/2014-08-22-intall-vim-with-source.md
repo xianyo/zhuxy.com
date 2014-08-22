@@ -7,11 +7,14 @@ tags: [vim]
 ---
 
 1. 卸载
-```bash
-  yum remove vim vim-enhanced vim-common vim-minimal
-``` 
+
+	```bash
+	yum remove vim vim-enhanced vim-common vim-minimal
+	``` 
+
 2. 下载、解压
-```bash
+
+	```bash
 	wget ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2  
 	wget ftp://ftp.vim.org/pub/vim/extra/vim-7.2-extra.tar.gz 
 	wget ftp://ftp.vim.org/pub/vim/extra/vim-7.2-lang.tar.gz  
@@ -21,19 +24,24 @@ tags: [vim]
 	tar zxvf vim-7.2-lang.tar.gz  
 	
 	mv vim72 vim74 
-``` 
-<!--break-->
+	``` 
+
+	<!--break-->
 
 3. 安装编译环境
-```bash
+
+	```bash
 	yum install ncurses-devel  
 	yum groupinstall "Development Tools"
-```
+	```
+
 4. 编译
 进入vim74/src
-```bash
+
+	```bash
 	./configure --prefix=/usr --with-features=huge  --disable-selinux --enable-pythoninterp --enable-cscope --enable-multibyte
 	make 
 	make install
 	ln -s /usr/local/bin/vim /usr/local/bin/vi
-```
+	```
+
