@@ -13,7 +13,7 @@ tags: [cloudstack]
 
 <!--break-->
 
-##### 整体过程概述
+#### 整体过程概述
 
 该操作手册将重点介绍如何搭建Cloudstack云平台: 使用CentOS 6.4作为KVM和NFS存储主机，部署于扁平二层网络并使用三层网络隔离(安全组), 所有资源集中于一台物理主机
 
@@ -239,14 +239,15 @@ CloudStack通过一系列系统虚拟机提供功能，如访问虚拟机控制�
 安装KVM代理仅仅需要一条简单的命令，但之后我们需要进行一些配置。
 
 	# yum -y install cloudstack-agent
-配置KVM
+
+##### 配置KVM
 KVM中我们有两部分需要进行配置, libvirt和QEMU.
 
-##### 配置QEMU
+###### 配置QEMU
 KVM的配置项相对简单，仅需配置一项。编辑QEMU VNC配置文件/etc/libvirt/qemu.conf并取消如下行的注释。
 
 	vnc_listen=0.0.0.0
-##### 配置Libvirt
+###### 配置Libvirt
 CloudStack使用libvirt管理虚拟机。因此正确的配置libvirt至关重要。Libvirt属于cloudstack-agent的依赖组件，应提前安装好。
 
 为了实现动态迁移，libvirt需要监听使用非加密的TCP连接。还需要关闭libvirts尝试使用组播DNS进行广播。这些都是在 /etc/libvirt/libvirtd.conf文件中进行配置。
@@ -267,19 +268,21 @@ CloudStack使用libvirt管理虚拟机。因此正确的配置libvirt至关重�
 
 	# service libvirtd restart
 
-#### KVM配置完成
+##### KVM配置完成
 最后一步是配置管理服务器，执行如下命令：
 
 	# cloudstack-setup-agent
 
 以上内容是针对KVM的安装和配置，下面将介绍如何使用CloudStack用户界面配置云平台。
 
+
 ####CloudStack用户界面配置云平台
+
 
 #####配置
 如上文所述，该手册所描述的环境将使用安全组提供网络隔离，这意味着您的安装环境仅需要一个扁平的二层网络，同样意味着较为简单的配置和快速的安装。
 
-####访问用户界面
+#####访问用户界面
 要访问CloudStack的WEB界面，仅需在浏览器访问 http://172.16.10.2:8080/client ，使用默认用户’admin’和密码’password’来登录。第一次登录可以看到欢迎界面，提供两个选项设置CloudStack。请选择继续执行基本配置安装。
 
 此时您会看到提示，要求为admin用户更改密码，请更新密码后继续。
@@ -307,7 +310,7 @@ CloudStack分为内部和公共DNS。内部DNS只负责解析内部主机名，�
 	来宾网络掩码 - 使用255.255.255.0
 	来宾网络 起始/结束IP - 使用172.16.10.30-172.16.10.200
 
-#####群集
+##### 群集
 
 添加区域后，仅需再为配置群集提供如下信息。
 
@@ -326,7 +329,7 @@ CloudStack分为内部和公共DNS。内部DNS只负责解析内部主机名，�
 	服务器 - 使用的IP地址为 172.16.10.2
 	路径 - 使用之前定义的 /primary
 
-####辅助存储
+##### 辅助存储
 
 如果添加的是一个新的区域，您需提供辅助存储相关信息 - 如下所示：
 
